@@ -9,6 +9,8 @@ import java.io.File;
 import java.util.Map;
 
 public class Factory implements PluginFactory {
+    public Factory(File factoryScratch) {}
+
     @Override
     public Map<String, PluginConfigurationFieldDescriptor> configurationDescription() {
         return Config.configurationDescription();

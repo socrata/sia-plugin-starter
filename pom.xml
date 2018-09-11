@@ -37,7 +37,7 @@
           <archive>
             <addMavenDescriptor>false</addMavenDescriptor>
             <manifestEntries>
-              <Socrata-Ingress-Plugin-Factory>com.socrata.pluginstarter.StarterFactory</Socrata-Ingress-Plugin-Factory>
+              <Socrata-Ingress-Plugin-Factory>com.socrata.pluginstarter.Factory</Socrata-Ingress-Plugin-Factory>
             </manifestEntries>
           </archive>
         </configuration>
