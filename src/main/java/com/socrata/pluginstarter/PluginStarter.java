@@ -14,13 +14,13 @@ public class PluginStarter implements Plugin {
 
 
   @Override
-  public Result<DataSourceListResponse> list(List<String> list) {
+  public Result<DataSourceListResponse> list(List<String> path) {
 
   }
 
   @Override
-  public Result<RowStreamResponse> give(List<String> list, DataSinkProvider dataSinkProvider) {
-    
+  public Result<RowStreamResponse> give(List<String> path, DataSinkProvider dataSinkProvider) {
+
   }
 
   @Override
