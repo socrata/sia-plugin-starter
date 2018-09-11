@@ -14,10 +14,34 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.socrata</groupId>
+      <artifactId>agent-lib</artifactId>
+      <version>0.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <archive>
+            <addMavenDescriptor>false</addMavenDescriptor>
+            <manifestEntries>
+              <Socrata-Ingress-Plugin-Factory>com.socrata.pluginstarter.StarterFactory</Socrata-Ingress-Plugin-Factory>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
